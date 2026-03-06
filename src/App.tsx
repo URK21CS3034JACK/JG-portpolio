@@ -466,13 +466,15 @@ export default function App() {
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="mailto:jackgilbertj30@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=jackgilbertj30@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`${themeColors.accentBg} text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-transform shadow-lg shadow-orange-500/20`}
                   >
                     <Mail className="w-5 h-5" /> Hire Me
                   </a>
                   <a
-                    href="/resume.pdf"
+                    href="/JACK-GILBERT bl 1-J-FlowCV-Resume-20250529 (4)_250529_005504 .pdf"
                     download="Jack_Gilbert_Resume.pdf"
                     className="glass-card border border-orange-500/30 text-orange-500 px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-orange-500/10 hover:scale-105 transition-all duration-300"
                   >
