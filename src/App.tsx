@@ -21,7 +21,8 @@ import {
   ChevronRight,
   Terminal,
   Award,
-  Briefcase
+  Briefcase,
+  FileDown
 } from 'lucide-react';
 
 // --- Types ---
@@ -465,15 +466,22 @@ export default function App() {
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="mailto:jackxavier30112003@gmail.com"
+                    href="mailto:jackgilbertj30@gmail.com"
                     className={`${themeColors.accentBg} text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-transform shadow-lg shadow-orange-500/20`}
                   >
                     <Mail className="w-5 h-5" /> Hire Me
                   </a>
+                  <a
+                    href="/resume.pdf"
+                    download="Jack_Gilbert_Resume.pdf"
+                    className="glass-card border border-orange-500/30 text-orange-500 px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-orange-500/10 hover:scale-105 transition-all duration-300"
+                  >
+                    <FileDown className="w-5 h-5" /> Resume
+                  </a>
                   <div className="flex gap-2">
                     {[
-                      { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/jack-gilbert" },
-                      { icon: <Github className="w-5 h-5" />, href: "#" }
+                      { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/jack-gilbert-j-65b72a3b5" },
+                      { icon: <Github className="w-5 h-5" />, href: "https://github.com/URK21CS3034JACK" }
                     ].map((social, i) => (
                       <a
                         key={i}
@@ -516,7 +524,7 @@ export default function App() {
           <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
             {[
               { icon: <Phone />, label: "Call Me", value: "+91 6369912630" },
-              { icon: <MapPin />, label: "Location", value: "Krishnagiri, India" },
+              { icon: <MapPin />, label: "Location", value: "Hosur, India" },
               { icon: <Award />, label: "Experience", value: "2021 - 2025 (B.Tech)" }
             ].map((item, i) => (
               <motion.div
@@ -657,9 +665,9 @@ export default function App() {
           <footer className="pt-20 border-t border-white/10 text-center">
             <h2 className="text-4xl font-serif font-bold mb-8 italic">Let's build something <span className="text-orange-500">great</span> together.</h2>
             <div className="flex justify-center gap-6 mb-12">
-              <a href="mailto:jackxavier30112003@gmail.com" className="hover:text-orange-500 transition-colors">Email</a>
-              <a href="https://linkedin.com/in/jack-gilbert" className="hover:text-orange-500 transition-colors">LinkedIn</a>
-              <a href="#" className="hover:text-orange-500 transition-colors">GitHub</a>
+              <a href="mailto:jackgilbertj30@gmail.com" className="hover:text-orange-500 transition-colors">Email</a>
+              <a href="https://linkedin.com/in/jack-gilbert-j-65b72a3b5" className="hover:text-orange-500 transition-colors">LinkedIn</a>
+              <a href="https://github.com/URK21CS3034JACK" className="hover:text-orange-500 transition-colors">GitHub</a>
             </div>
             <p className="text-xs uppercase tracking-[0.5em] opacity-30 font-bold">
               &copy; 2025 Jack Gilbert J. All Rights Reserved.
